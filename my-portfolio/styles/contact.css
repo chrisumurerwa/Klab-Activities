@@ -1,0 +1,12 @@
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
