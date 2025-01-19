@@ -20,6 +20,8 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden;
+
 }
 
 /* Navigation Styles */
@@ -29,6 +31,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-brand {
@@ -55,11 +63,14 @@ body {
     background-color: var(--secondary-color);
 }
 
+
 /* Main Content Styles */
 .main-content {
+    padding-top: 80px; /* Add padding to prevent content from going under navbar */
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .skills-section {
