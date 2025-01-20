@@ -18,6 +18,10 @@
                 <li><a href="../contact/contact.html">Contact Me</a></li>
                 <li><a href="../skill/skills.html">Skills</a></li>
             </ul>
+             <!-- Hamburger Menu for Small Screens -->
+             <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
     <main>
@@ -65,5 +69,14 @@
             <p>&copy; 2025 Christine Umurerwa All rights are served.</p>
         </div>
     </footer>
+    <script>
+        // Toggle Menu for Mobile
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
